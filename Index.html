@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HunterJake Site</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #3366cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #3366cc;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo principal */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: none;
+        }
+
+        /* Estilo dos artigos */
+        article h2 {
+            color: #3366cc;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        article p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo das imagens */
+        article img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Botão de música */
+        .play-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3366cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>HunterJake Site!</h1>
+        <p>Esse site foi criado pelo MEDIUM, namorado do Jake, para postar coisas que o HunterJake gosta! Sempre estará sendo atualizado, e o MEDIUM ama muito o Jake.</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+    <a onclick="showSection('home')">Início</a>
+    <a onclick="showSection('articles')">Artigos</a>
+    <a onclick="showSection('favoritos-do-vavaro')">Favoritos do Vavaŕo</a>
+    <a onclick="showSection('about')">Sobre</a>
+    <a onclick="showSection('contact')">Contato</a>
+</nav>
+<!-- Favoritos do Vavaŕo -->
+<div class="content" id="favoritos-do-vavaro">
+    <h2>Favoritos do Vavaŕo</h2>
+
+     <article>
+        <h2>Cinnamoroll ★</h2>
+        <p>Cinnamoroll é um personagem de pelúcia criado pela Sanrio, conhecido por seu corpo fofinho, orelhas longas e cauda enrolada, que lembra um rolinho. Ele é extremamente popular entre os fãs de personagens fofos e adorado por muitas pessoas ao redor do mundo.</p>
+        <img src="graphics-cinnamoroll-099302.gif" alt="Imagem do Cinnamoroll">
+    </article>
+
+<article>
+    <h2>Mundo de Mia ★</h2>
+    <p>Mundo de Mia é uma série de animação infantil que segue as aventuras de Mia, uma garota que embarca em diversas jornadas e desafios enquanto aprende sobre amizade, coragem e a importância de ajudar os outros.</p>
+    <img src="Mundo.jpeg" alt="Imagem do Mundo de Mia">
+    <p>Com personagens cativantes e histórias emocionantes, o Mundo de Mia se tornou uma produção popular entre crianças e famílias ao redor do mundo, com temas educativos misturados com magia e fantasia.</p>
+</article>
+<!-- Artigo sobre Barbie -->
+<article>
+    <h2>Barbie</h2>
+    <p>A Barbie é uma das bonecas mais icônicas do mundo, criada pela Mattel em 1959. Ao longo dos anos, a Barbie se transformou em um símbolo de diversidade e empoderamento feminino, passando por diversas transformações de carreira e estilo. Ela é conhecida por sua estética única e por inspirar crianças e adultos a explorarem o mundo da imaginação e da criatividade.</p>
+    <img src="Barbie.jpeg" alt="Barbie GIF">
+</article>
+
+<!-- Artigo sobre Mako Mermaids -->
+<article>
+    <h2>Mako Mermaids ★</h2>
+    <p>Mako Mermaids é uma série australiana que se passa em uma ilha mágica habitada por sereias. A história segue três adolescentes que se transformam em sereias após um incidente com uma lua cheia. A série mistura aventura, mistério e magia enquanto explora as relações entre as sereias e os humanos. Com seus efeitos visuais e enredo encantador, Mako Mermaids se tornou um sucesso para muitos fãs do gênero fantástico.</p>
+    <img src="Mako mermaids poster.jpeg" alt="Mako Mermaids GIFS">
+</article>
+<!-- Artigo sobre Monster High -->
+<article>
+    <h2>Monster High ★</h2>
+    <p>Monster High é uma franquia de brinquedos, animações e filmes que apresenta uma coleção de personagens inspirados em monstros e criaturas míticas, como vampiros, zumbis, sereias e lobisomens, mas com uma pegada moderna e divertida. A série segue a vida dos filhos dos monstros mais famosos, enquanto enfrentam os desafios do ensino médio e lidam com temas de amizade, diversidade e aceitação.</p>
+    <img src="Monster.jpeg" alt="Monster High GIF">
+</article>
+
+<!-- Favorito - Mr. Pickles -->
+<article>
+    <h2>Mr. Pickles ★</h2>
+    <p>Mr. Pickles é uma série de animação adulta que segue a vida de um cãozinho chamado Pickles, que aparentemente é um cachorro normal, mas na verdade esconde um lado sombrio e psicótico.</p>
+    <img src="Here he comes Mr Pickles.jpeg" alt="Imagem de Mr. Pickles">
+    <p>A série mistura comédia e terror de uma maneira única, abordando temas de violência e humor negro com um estilo de animação peculiar e excêntrico.</p>
+</article>
+<!-- Favorito - South Park -->
+<article>
+    <h2>South Park</h2>
+    <p>South Park é uma série de animação adulta conhecida por seu humor irreverente e satírico, abordando temas políticos e sociais de maneira provocativa e sem filtros.</p>
+    <img src="South park.jpeg" alt="Imagem de South Park">
+    <p>A série segue os personagens Stan, Kyle, Cartman e Kenny, enquanto eles enfrentam situações absurdas e eventos incomuns em sua cidade natal, South Park. Seu estilo de animação e comédia única conquistou uma legião de fãs ao longo dos anos.</p>
+</article>
+
+    
+<article>
+        <h2>Hyunjin ★</h2>
+        <p>Hyunjin é um dos membros do grupo de K-pop Stray Kids. Ele é conhecido por seu carisma e habilidades de dança impressionantes, além de ser um dos favoritos entre os fãs. Sua energia no palco e seu visual charmoso são características marcantes.</p>
+        <img src="KPOP STRAY KIDS _ HYUNJIN _ WALLPAPER & LOCK SCREEN.jpeg" alt="Imagem do Hyunjin">
+    </article>
+
+    <article>
+        <h2>Seungmin ★</h2>
+        <p>Seungmin também é um membro do Stray Kids, e é famoso por sua voz suave e doce. Ele se destaca no grupo tanto como vocalista quanto por sua personalidade amigável e divertida, conquistando corações por sua dedicação e entusiasmo.</p>
+        <img src="KPOP STRAY KIDS _ SEUNGMIN _ WALLPAPER & LOCK SCREEN.jpeg" alt="Imagem do Seungmin">
+    </article>
+
+    <article>
+        <h2>Changbin</h2>
+        <p>Changbin é outro integrante do Stray Kids, e seu rap poderoso e presença de palco imponente fazem dele um dos favoritos. Sua personalidade forte e sua habilidade de criar músicas profundas são características que impressionam os fãs.</p>
+        <img src="Changbin.jpeg" alt="Imagem do Changbin">
+    </article>
+
+    <article>
+        <h2>Nayeon</h2>
+        <p>Nayeon é uma das integrantes do grupo TWICE, conhecida por sua energia cativante e sorriso adorável. Ela é uma das líderes do grupo e se destaca por suas performances e habilidade vocal.</p>
+        <img src="Nayeon.jpeg" alt="Imagem da Nayeon">
+    </article>
+
+    <article>
+        <h2>Chaewon</h2>
+        <p>Chaewon é uma das vocalistas do LE SSERAFIM, e é adorada por sua beleza e talento. Ela tem uma presença de palco incrível e se destaca por sua atuação vocal cheia de emoção e técnica.</p>
+        <img src="☆.jpeg" alt="Imagem da Chaewon">
+    </article>
+
+    <article>
+        <h2>Chaeryoung</h2>
+        <p>Chaeryoung é conhecida por sua energia no palco e por suas habilidades de dança. Ela é uma das integrantes do TWICE e tem conquistado uma grande base de fãs devido ao seu charme e talento.</p>
+        <img src="itzy chaeryoung.jpeg" alt="Imagem da Chaeryoung">
+    </article>
+
+    <article>
+        <h2>Lisa</h2>
+        <p>Lisa, do BLACKPINK, é uma das artistas mais influentes do K-pop. Sua habilidade na dança, no rap e seu estilo único a tornaram um ícone mundial. Sua popularidade transcende as fronteiras da música, tornando-a um verdadeiro fenômeno.</p>
+        <img src="Lisa.jpeg" alt="Imagem da Lisa">
+    </article>
+
+    <article>
+        <h2>Yeonjun</h2>
+        <p>Yeonjun, do TXT, é reconhecido por suas habilidades de dança e rap, além de seu estilo distinto. Ele possui uma personalidade carismática que encanta seus fãs, fazendo dele um dos membros mais amados do grupo.</p>
+        <img src="Choi Yeonjun.jpeg" alt="Imagem do Yeonjun">
+    </article>
+
+    <article>
+        <h2>Niki</h2>
+        <p>Niki é um dos membros do ENHYPEN e é famoso por sua habilidade de dança e por ser uma das estrelas mais jovens do K-pop. Sua energia jovem e habilidade em se conectar com os fãs fazem dele um dos favoritos.</p>
+        <img src="☆ (1).jpeg" alt="Imagem do Niki">
+    </article>
+<article>
+    <h2>Greninja</h2>
+    <p>Greninja é um Pokémon do tipo Água e Sombrio, conhecido por sua agilidade e habilidades de combate excepcionais. Ele é a evolução final de Froakie, o Pokémon inicial de Kalos na sexta geração.</p>
+    <img src="Ash Greninja _ Greninjash _ Satoshi Gekkouga by Alexalan on DeviantArt.jpeg" alt="Imagem do Pokémon Greninja">
+    <p>Com seu movimento de assinatura "Water Shuriken" e sua habilidade especial "Battle Bond", Greninja se tornou um dos Pokémon mais populares e amados entre os fãs. Ele também foi destaque em jogos como Super Smash Bros.</p>
+</article>
+<!-- Favorito - Lego Batman -->
+<article>
+    <h2>Lego Batman</h2>
+    <p>Lego Batman é o personagem Batman da franquia Lego, conhecido por seu humor irreverente e por sua versão exagerada e cômica do herói da DC Comics. Ele é uma versão mais leve do Batman, mas ainda assim um herói corajoso e destemido.</p>
+    <img src="Batman.jpeg" alt="Imagem do Lego Batman">
+    <p>Ele apareceu em diversos filmes de animação e jogos, com destaque para o filme "Lego Batman: O Filme", onde sua personalidade egoísta e divertida foi um dos principais atrativos do longa-metragem.</p>
+</article>
+<!-- Favorito - Slipknot -->
+<article>
+    <h2>Slipknot</h2>
+    <p>Slipknot é uma banda de metal americana conhecida por sua energia intensa, performances ao vivo imersivas e pelo uso de máscaras assustadoras. A banda mistura elementos de nu-metal, metal alternativo e death metal em seu som único.</p>
+    <img src="Slipknot.jpeg" alt="Imagem da banda Slipknot">
+    <p>Com álbuns de sucesso como "Iowa" e "Vol. 3: (The Subliminal Verses)", Slipknot se tornou uma das bandas mais influentes do metal contemporâneo. Suas letras profundas e músicas pesadas continuam a ressoar com fãs ao redor do mundo.</p>
+</article>
+
+    
+</div>
+
+
+    <!-- Seção Início -->
+    <div class="content" id="home" style="display: block;">
+        <p>Bem-vindo ao HunterJake Site! Aqui você encontra conteúdos únicos e interessantes sobre tudo o que HunterJake gosta.</p>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content" id="articles">
+        
+        <!-- Artigo 1 -->
+        <article>
+            <h2>Doberman</h2>
+            <p>Os Dobermans são uma raça de cães altamente inteligente e leal, conhecidos por sua coragem e energia. Eles foram originalmente criados na Alemanha no final do século XIX e são frequentemente usados como cães de guarda devido à sua agilidade e natureza protetora.</p>
+            <img src="Ace _ European Doberman Pinscher.jpeg" alt="Imagem do doberman">
+            <p>Além disso, os Dobermans são muito afetuosos com suas famílias e são conhecidos por criarem laços profundos com seus donos. Eles requerem bastante exercício e estimulação mental, o que os torna ideais para donos ativos.</p>
+        </article>
+
+        <!-- Artigo 2 -->
+        <article>
+            <h2>Bohemian Rhapsody</h2>
+            <p>"Bohemian Rhapsody" é uma das músicas mais icônicas da banda Queen, lançada em 1975. Composta por Freddie Mercury, essa música combina rock e ópera, criando uma experiência única e inesquecível para os ouvintes.</p>
+            <img src="Queen and bohemian Rhapsody cast.jpeg" alt="Imagem do Queen">
+            <p>A música não segue uma estrutura convencional de versos e refrões, mas é dividida em várias seções distintas. Ao longo dos anos, "Bohemian Rhapsody" tornou-se um hino do rock e continua a ser uma das músicas mais ouvidas no mundo.</p>
+            <a class="play-button" onclick="playMusic()">▶️ Ouvir Bohemian Rhapsody</a>
+            <audio id="bohemian-audio" src="Queen – Bohemian Rhapsody (Official Video Remastered)(MP3_160K).mp3"></audio>
+        </article>
+
+        <!-- Artigo 3 -->
+        <article>
+            <h2>Coraline</h2>
+            <p>Coraline é um filme de animação baseado no livro de Neil Gaiman. Conta a história de uma jovem que descobre um mundo alternativo onde tudo parece perfeito, mas rapidamente percebe que há algo de sinistro por trás da realidade.</p>
+            <img src="Coraline by Maja.jpeg" alt="Imagem do filme Coraline">
+            <p>Lançado em 2009, o filme é um conto sombrio que explora temas como família, coragem e o perigo das ilusões. Com sua atmosfera única e visual impressionante, Coraline tornou-se um clássico moderno entre crianças e adultos.</p>
+            <!-- Artigo X - Xadrez -->
+<article>
+    <h2>Xadrez</h2>
+    <p>O xadrez é um jogo de estratégia jogado entre dois jogadores. Cada jogador começa com 16 peças: um rei, uma dama, duas torres, dois cavalos, dois bispos e oito peões. O objetivo do jogo é dar xeque-mate ao rei adversário, uma situação em que o rei está em risco de captura e não pode se mover para uma posição segura.</p>
+    <img src="anya taylor-joy - the queen's gambit.jpeg" alt="Imagem de um tabuleiro de xadrez">
+</article>
+<!-- Artigo - Ordem Paranormal - Segredo na Ilha -->
+<article>
+    <h2>Ordem Paranormal - Segredo na Ilha</h2>
+    <p>Ordem Paranormal: Segredo na Ilha é um RPG de mesa brasileiro criado por Fábio Yabu e Rafael Dragaud. Este jogo mistura elementos de mistério, terror e investigação. A história se passa em uma ilha isolada, onde os jogadores devem descobrir segredos e sobreviver a fenômenos paranormais. É uma experiência envolvente, com uma narrativa única que explora o sobrenatural e o desconhecido.</p>
+    <img src="Ordem.jpg" alt="Imagem de Ordem Paranormal - Segredo na Ilha">
+    <p>Os personagens são desafiados a resolver mistérios enquanto enfrentam forças obscuras e poderes paranormais. O jogo tem mecânicas de narrativa e tomada de decisões que permitem criar uma história personalizada a cada sessão.</p>
+</article>
+
+<!-- Artigo - Helluva Boss -->
+<article>
+    <h2>Helluva Boss</h2>
+    <p>Helluva Boss é uma série animada criada por Vivienne "VivziePop" Medrano. A série é uma comédia de humor negro que se passa no inferno, onde um grupo de demônios trabalha em uma agência de assassinatos chamada I.M.P. (Immediate Murder Professional).</p>
+    <img src="Helluva boss icon.jpeg" alt="Imagem de Helluva Boss">
+    <p>A série é conhecida por seu humor irreverente, personagens excêntricos e cenas animadas cheias de ação. Cada episódio foca em diferentes aspectos da vida desses demônios, abordando temas como trabalho, relações e caos no inferno.</p>
+</article>
+
+
+<!-- Artigo Y - Balé -->
+<article>
+    <h2>Balé</h2>
+    <p>O balé é uma forma de dança que requer técnica, graça e disciplina. Originado na Itália do século XV e popularizado na França, o balé é uma das formas de dança mais clássicas e apreciadas em todo o mundo.</p>
+    <img src="Like it so quiet_.jpeg" alt="Imagem de uma bailarina">
+</article>
+
+<!-- Artigo Z - Black Swan -->
+<article>
+    <h2>Black Swan</h2>
+    <p>O filme Black Swan, dirigido por Darren Aronofsky, é um thriller psicológico que explora os dilemas de uma bailarina interpretada por Natalie Portman, que busca a perfeição em sua arte enquanto lida com os próprios conflitos internos.</p>
+    <img src="Black Swan _ Cisne Negro, 2010.jpeg" alt="Imagem do filme Black Swan">
+</article>
+
+<!-- Artigo W - Patinação no Gelo -->
+<article>
+    <h2>Patinação no Gelo</h2>
+    <p>A patinação no gelo é um esporte de inverno que envolve deslizar sobre uma superfície de gelo usando patins. Pode ser praticado de forma recreativa ou competitiva, com eventos como o patinação artística e o hóquei no gelo.</p>
+    <img src="8d0be704-74f4-4163-9334-0bbf5977f3dc.jpeg" alt="Imagem de uma patinadora no gelo">
+</article>
+
+<!-- Artigo V - Master Chef -->
+<article>
+    <h2>Master Chef</h2>
+    <p>MasterChef é um programa de televisão baseado em competição culinária, onde chefs amadores competem em desafios gastronômicos para ganhar o título de MasterChef. O programa é famoso por suas provas desafiadoras e pela criatividade dos participantes.</p>
+    <img src="MasterChef Brasil.jpeg" alt="Imagem do programa MasterChef">
+</article>
+
+        </article>
+    </div>
+
+    <!-- Seção "Sobre" -->
+    <div class="content" id="about">
+        <p>Woo-young-Woo, lindo ao contrário continua sendo Woo-young-woo, como catraca, caneca, careca, comic, Woo-young-woo.</p>
+    </div>
+
+    <!-- Seção Contato -->
+    <div class="content" id="contact">
+        <p>BOKU CINNAMON!</p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 HunterJake Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para exibir a seção e ocultar as outras
+        function showSection(section) {
+            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+        }
+
+        // Função para reproduzir a música "Bohemian Rhapsody"
+        function playMusic() {
+            const audio = document.getElementById('bohemian-audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
